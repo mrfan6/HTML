@@ -1,0 +1,106 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+body{
+	width:100%;
+	height: auto;
+	position: relative;
+	font-size:62.5%;
+}
+nav{width:100%;height: 70px;background-color: yellow;}
+.bdimg{
+	background: url(../img/0.jpg) center top no-repeat fixed #000;
+	background-size:cover;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+section{
+	 max-width: 960px;
+     margin: 0 auto;
+     background-color: #fddfbd;
+     opacity: 0.9;
+     border-radius: 20px;
+     height: 800px;
+}
+footer{
+	width:100%;
+	height:30px;
+	background-color: yellowgreen;
+	left:0;
+	bottom: 0;
+}
+nav>ul>li>a>img{width:200px;height:50px;}
+ul.sidenav {
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+    background-color: yellow;
+    overflow: auto;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ul.sidenav li a {
+    /*display: flex;*/
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    float: left;
+    padding: 15px;
+    flex-wrap: nowrap;
+    font-size:1.2rem;
+}
+ul.sidenav li:nth-of-type(1) a{
+	cursor: pointer;
+	pointer-events: none;
+}
+ul.sidenav li:nth-child(n+2) a{
+	cursor: wait;
+	margin-top:10px;
+}
+
+ul.sidenav li a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover {
+    background-color: #555;
+    color: white;
+}
+ul.sidenav>li>audio{margin-top:5px}
+
+
+footer>div:nth-of-type(1){float: left;}
+footer>div:nth-of-type(2){float: right;margin-right:20px}
+
+iframe{display: none;position: relative;top:-180px}
+.fu>a{text-decoration: none;}
+.fu:hover .er{
+	color: red;
+	display:block;
+}
+
+@media (min-width: 1200px) {
+	footer{font-size:1rem;}
+	.bdimg{height:920px;}
+	section{margin-top:40px;}
+}
+/*中等屏幕*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	ul.sidenav>li>a>span{display:inline-block;font-size:18px;font-style:italic;}
+}
+/*超小屏幕 主要是手机*/
+@media (min-width: 480px) and (max-width: 767px){
+	nav>ul>li>a>img{display: none;}
+	ul.sidenav>li>audio{display: none;}
+	ul.sidenav>li>a>span{display:inline-block;font-size:0.7rem;font-style:bold;}
+	footer{font-size:0.7rem}
+}
+@media (max-width: 479px) {
+	nav>ul>li>a>img{display: none;}
+	ul.sidenav>li>audio{display: none;}
+	ul.sidenav>li>a>span{display:inline-block;font-size:0.6rem}
+	footer{font-size:0.6rem}
+
+}

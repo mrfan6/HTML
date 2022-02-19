@@ -1,0 +1,59 @@
+.bdimg{
+	background: url(../img/bj_4.jpg) left top no-repeat fixed #000;
+	background-size:cover;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+video{
+	width:450px;
+	height:300px;
+}
+section>div{
+	margin: 10px;
+	position:absolute;
+}
+section>div>video:nth-of-type(1){
+	position: relative;
+	left:0;
+	top:0;
+}
+section>div>img:nth-of-type(1){
+	position: relative;
+	width:150px;
+	height:300px;
+	left:80px;
+	top:0;
+}
+section>div>img:nth-of-type(2){
+	position: relative;
+	left:40px;
+	top:0;
+	
+}
+section>div>video:nth-of-type(2){
+	position: relative;
+	left:0;
+	top:0;
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 480px) and (max-width: 767px){
+	section>div>img:nth-of-type(1){
+		height:100px;
+	}
+	section>div>img:nth-of-type(2){
+		width:250px;
+		height:150px;
+		top: -130px;
+		left:180px;
+	}
+	section>div>video:nth-of-type(2){
+		top:-130px
+	}
+	.bdimg{padding-bottom: 45px;}
+}
+@media (max-width: 479px) {
+	section>h1{font-size:1.2rem}
+}
+
