@@ -81,6 +81,7 @@ button:nth-of-type(2){margin-left:10px;margin-top:15px;width:70px;background-col
 	}
 	section>h1{font-size:1.8rem}
 }
+/*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
 @media (min-width: 480px) and (max-width: 767px){
 	section *{font-size:1.4rem}
 	#background_img{margin-bottom: 30px;}
@@ -88,10 +89,21 @@ button:nth-of-type(2){margin-left:10px;margin-top:15px;width:70px;background-col
 	section>h1{font-size:1.7rem}
 	.tablecell>div>img{display: none;}
 }
-@media (max-width: 479px) {
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
 	section>h1{font-size:1.2rem}
 	section *{font-size:1.5rem}
 	#background_img{margin-bottom: 30px;}
+	#userlog{top:200px;margin-right:100px}
+	section>h1{font-size:1.7rem}
+	.tablecell>div>img{display: none;}
+}
+
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px){
+	section>h1{font-size:1rem}
+	section *{font-size:1.1rem}
+	#background_img{margin-bottom: 20px;}
 	#userlog{top:200px;margin-right:100px}
 	section>h1{font-size:1.7rem}
 	.tablecell>div>img{display: none;}
